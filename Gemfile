@@ -46,3 +46,4 @@ gem 'unicorn'
 
 # pry
 gem 'pry-rails'
+gem 'mechanize'
