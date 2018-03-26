@@ -8,7 +8,7 @@ TechReviewSite::Application.routes.draw do
   get 'search' => 'top#search'
 
   resources :products, :only => [:show] do
-    resources :reviews, only: [:new, :create]
+    resources :reviews
   end
 
   # Example of regular route:
