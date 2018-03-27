@@ -1,4 +1,4 @@
-class ReviewsController < ApplicationController
+class ReviewsController < RankingController
      layout 'review_site'
 
   def new

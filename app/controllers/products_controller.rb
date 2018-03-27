@@ -1,7 +1,7 @@
-class ProductsController < ReviewsController
+class ProductsController <RankingController
   
   def index
-    @product = Product.order('id ASC').limit(12)
+    @product = Product.order("id ASC").limit(5)
   end
   
   def show
