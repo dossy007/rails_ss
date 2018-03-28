@@ -1,4 +1,5 @@
 TechReviewSite::Application.routes.draw do
+  devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -6,7 +7,7 @@ TechReviewSite::Application.routes.draw do
   root 'products#index'
 
   get 'search' => 'products#search'
-
+  resources :users
   resources :products, :only => [:show] do
     resources :reviews
   end
